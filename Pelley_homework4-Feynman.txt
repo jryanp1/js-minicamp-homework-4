@@ -1,0 +1,14 @@
+Callback functions are higher order functions that can be passed to other functions as parameters and run inside other functions at a later point. This is also known as a callback pattern. This could be used for things like making an AJAX request while browsing, where we don't want to slow things down so we run two things simultaneously without waiting for the callback to be called.
+
+Closures are like keeping a copy of all the local variables, just as they were when the function exited. A new set oflocal variables is kept every time a function with a closure is called, because the function has a function declaration inside of it, and a reference to that inside function is either returned, or some external reference to it is kept. A closure can access the outer function's scope. This is especially useful if your function needs to solve something through recursion.
+
+Arguments array
+This is a grouping of all the arguments passed to a function. Its properties are numbered like an array but really it's an object, not actually an array. 
+
+Recursion is the ability to call a function from inside itself.
+
+Prototype properties let you stick methods & properties to an object. One example would be creating a constructor.
+
+Constructors are the name (with first letter capitalized according to JavaScript 'best practices') for "object types" that you whip up when you want more than one object of the same type. An example of a constructor would be creating a function called Person which assigns the variables of name, eye color, age etc to different members of a family (like 'Mary','blue', '30'for example). Once you have established the constructor function and added all the properties/methods etc to it, you can use the new keyword in front of it (like 'new Person') to create new objects of the same type, and the constructor object becomes a prototype. 
+
+You can change your own prototypes, but do not change the prototypes of standard Javascript objects which everyone uses. 
